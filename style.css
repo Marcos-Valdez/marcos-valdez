@@ -1,0 +1,317 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Dosis;
+}
+
+h2{
+  font-size: 2rem;
+  font-family: monospace;
+  margin: auto;
+  color: beige;
+  text-align: center;
+  width: 75%;
+}
+
+h2.info-radio{
+  display: flex;
+  align-items: center;
+  background-color: rgba(0,0,0,.5);
+  margin: auto;
+  font-size: 2rem;
+  font-family: "AverageMono";
+  color: lightgray;
+  text-align: center;
+}
+
+h2.info-video{
+  font-size: 2rem;
+  font-family: "orbitron";
+  color: lightgray;
+  text-align: center;
+  width: 90%;
+}
+
+h3{
+  font-size: 2rem;
+  font-family: monospace;
+  margin: auto;
+  color: indianred;
+  text-align: center;
+  width: 90%;
+}
+
+h6{
+  font-size: 3rem;
+  font-family: Dosis;
+  margin: auto;
+  color: white;
+  text-align: center;
+  width: 90%;
+}
+
+h6:hover{
+  transform: scale(1.5);
+  transition-duration: 200ms;
+}
+
+p{
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-family: "Open Sans";
+  text-align: center;
+  margin: auto;
+}
+
+img{
+  max-width: 100%;
+}
+
+a:link{
+  color: teal;
+  text-decoration: none;
+}
+
+a:hover{
+  color: indianred;
+  text-decoration: underline;
+}
+
+
+/*Estilos generales*/
+
+
+body{
+  background-color: white;
+}
+
+header{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  position: fixed;
+  top: 0; left: 0;
+  width: 128px; height: 100vh;
+  background-color: oldlace;
+}
+
+header a{
+  font-size: 1.1rem;
+  font-family: Raleway;
+  color: teal;
+}
+
+.button-menu{
+  display: none;
+}
+
+.flex-item{
+  padding: 20px 0px;
+  width: 100%; height: auto;
+  text-align: center;
+}
+
+main{
+  position: absolute;
+  top: 0; left: 128px;
+  max-width: 90%; height: auto;
+  background-color: indianred;
+}
+
+#acerca{
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%; height: 300px;
+  background-image: url('imágenes/acerca-fondo.png');
+}
+
+  #bio{
+    width: 50%; height: auto;
+    background-color: rgba(255,255,255,.5);
+    margin: auto;
+  }
+
+#articulos{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 100%; height: 400px;
+  background-color: beige;
+}
+
+  .info{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 70%; height: 100%;
+  }
+
+    .articulo-imagen{
+      width: 25%; height: 50%;
+      padding: 10px;
+
+      font-size: 1.1rem;
+      font-weight: 400;
+      font-family: "Open Sans";
+      text-align: center;
+      margin: auto;
+    }
+
+    #image-1{
+      background-color: indianred;
+    }
+
+    #image-2{
+      background-color: tomato;
+
+    }
+
+    #image-3{
+      background-color: gold;
+    }
+
+    #image-4{
+      background-color: yellowgreen;
+    }
+
+    #image-5{
+      background-color: mediumaquamarine;
+    }
+
+    #image-6{
+      background-color: cadetblue;
+    }
+
+    #image-7{
+      background-color: lightseagreen;
+    }
+
+    #image-8{
+      background-color: palegoldenrod;
+    }
+
+    #image-1:hover, #image-2:hover, #image-3:hover, #image-4:hover, #image-5:hover, #image-6:hover, #image-7:hover, #image-8:hover{
+      transform: scale(1.02);
+      transform-origin: bottom;
+      border: 2px solid white;
+      transition-duration: 200ms;
+      text-decoration: none;
+      color: black;
+      z-index: 1;
+    }
+
+
+  #info-description{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 30%; height: 100%;
+    background-color: crimson;
+  }
+
+#publicidad{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  max-width: 1156px; height: 400px;
+}
+
+  #radio{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-content: center;
+    background-image: url('imágenes/micro-fondo.png');
+    background-size: cover;
+    width: 50%; height: 400px;
+  }
+
+    audio{
+      margin: auto;
+      width: 70%;
+      text-align: center;
+    }
+
+
+    #mas-promos{
+      margin: auto;
+      padding: 10px 40px;
+      border: 3px outset white;
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+      background-color: indianred;
+
+      font-size: 1.5rem;
+      font-weight: 400;
+      font-family: monospace;
+      color: white;
+      text-decoration: none;
+    }
+
+  #carteles{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    background-image: url('imágenes/tv-fondo.png');
+    max-width: 1156px; height: 400px;
+    width: 50%;
+  }
+
+  video {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+  }
+
+#boxeo{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  background-image: url('imágenes/boxeo-fondo.png');
+  max-width: 1156px; height: 400px;
+  }
+
+  #mas-boxeo{
+    margin-top: 30px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+
+
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: monospace;
+    color: black;
+    text-decoration: none;
+    margin: auto;
+  }
+
+#mail{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%; height: 400px;
+  background-image: url('imágenes/acerca-fondo.png');
+}
+
+#mail a{
+  text-decoration: none;
+}

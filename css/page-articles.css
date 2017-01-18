@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Dosis;
+
+  padding-bottom: 100px;
+}
+
+
+
+#inicio{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Dosis;
+
+  padding-top: 50px;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+a:link{
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Dosis;
+
+  padding-bottom: 25px;
+  
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  color: chocolate;
+  text-decoration: underline;
+}
+
+body{
+  width: 100%; height: auto;
+}
+
+main{
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+article.lista {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px 0px 30px 0px;
+}
